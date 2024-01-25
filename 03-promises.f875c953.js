@@ -1,0 +1,2 @@
+document.querySelector("[name=delay]"),document.querySelector("[name=step]"),document.querySelector('[name="amount"]');document.querySelector('[type="submit"]').addEventListener("click",(e=>{e.preventDefault()})),new Promise(((e,o)=>{setTimeout((()=>{}))})).then((({position:e,delay:o})=>{console.log(`✅ Fulfilled promise ${e} in ${o}ms`)})).catch((({position:e,delay:o})=>{console.log(`❌ Rejected promise ${e} in ${o}ms`)}));
+//# sourceMappingURL=03-promises.f875c953.js.map

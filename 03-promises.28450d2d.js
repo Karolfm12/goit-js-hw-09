@@ -1,2 +1,0 @@
-!function(){document.querySelector("[name=delay]"),document.querySelector("[name=step]"),document.querySelector('[name="amount"]');document.querySelector('[type="submit"]').addEventListener("click",(function(e){e.preventDefault()})),new Promise((function(e,n){setTimeout((function(){}))})).then((function(e){var n=e.position,o=e.delay;console.log("✅ Fulfilled promise ".concat(n," in ").concat(o,"ms"))})).catch((function(e){var n=e.position,o=e.delay;console.log("❌ Rejected promise ".concat(n," in ").concat(o,"ms"))}))}();
-//# sourceMappingURL=03-promises.28450d2d.js.map

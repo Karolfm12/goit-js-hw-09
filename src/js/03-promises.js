@@ -28,6 +28,9 @@ button.addEventListener('submit', e => {
         console.log(`❌ Rejected promise ${i} in ${currentDelay}ms`);
       });
   }
+  amountInput.value = null;
+  firstDelay.value = null;
+  delayStep.value = null;
 });
 
 function createPromise(position, delay) {

@@ -23,12 +23,13 @@ const fp = flatpickr(chooseDate, {
   minuteIncrement: 1,
   position: 'right',
   onClose(selectedDates) {
-    // console.log(selectedDates[0] > date);
+    startButton.disabled = true;
     const ms = selectedDates[0].getMilliseconds();
     if (selectedDates[0] > date) {
       startButton.disabled = false;
 
       startButton.addEventListener('click', () => {
+        startButton.disabled = true;
         timerId = setInterval(() => {
           let differnece = fp.latestSelectedDateObj - new Date();
           if (differnece >= 0) {

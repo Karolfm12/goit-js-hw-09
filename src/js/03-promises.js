@@ -4,8 +4,9 @@ const firstDelay = document.querySelector('[name=delay]');
 const delayStep = document.querySelector('[name=step]');
 const amountInput = document.querySelector('[name="amount"]');
 const button = document.querySelector('[type="submit"]');
+const form = document.querySelector('.form');
 
-button.addEventListener('submit', e => {
+form.addEventListener('submit', e => {
   e.preventDefault();
   const amount = Number(amountInput.value);
   const startDelay = Number(firstDelay.value);
